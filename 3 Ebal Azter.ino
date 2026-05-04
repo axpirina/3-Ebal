@@ -25,10 +25,10 @@ float kalkulatuZerraUhina(unsigned long unekoMs) {
   float t = fmodf((float)unekoMs, periodoMs);
 
   if (t < igoeraTarteaMs) {
-    return (t / igoeraTarteaMs) * 100.0f;
+    return (t / igoeraTarteaMs) * 200.0f;
   }
 
-  return 100.0f - ((t - igoeraTarteaMs) / igoeraTarteaMs) * 100.0f;
+  return 200.0f - ((t - igoeraTarteaMs) / igoeraTarteaMs) * 200.0f;
 }
 
 void konektatuWiFira() {
